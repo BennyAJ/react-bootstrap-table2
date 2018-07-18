@@ -93,9 +93,9 @@ class DateFilter extends Component {
   }
 
   applyFilter(value, comparator) {
-    if (!comparator || !value) {
-      return;
-    }
+    //if (!comparator || !value) {
+    //  return;
+    //}
     const { column, onFilter, delay } = this.props;
     const execute = () => {
       const date = typeof value !== 'object' ? new Date(value) : value;
